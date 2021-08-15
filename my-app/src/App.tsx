@@ -18,7 +18,7 @@ function App() {
         <div className={'main_wrapper'}>
             <input value={calc} className={'input'}></input>
             <div className={'operations_wrapper'}>
-                <button>///</button>
+                <button>//</button>
                 <button>*</button>
                 <button>+</button>
                 <button>-</button>
