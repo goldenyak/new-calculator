@@ -18,10 +18,10 @@ function App() {
         <div className={'main_wrapper'}>
             <input value={calc} className={'input'}></input>
             <div className={'operations_wrapper'}>
-                <button>//</button>
-                <button>*</button>
-                <button>+</button>
-                <button>-</button>
+                <button onClick={ () => getButtonValue('/')}>/</button>
+                <button onClick={ () => getButtonValue('*')}>*</button>
+                <button onClick={ () => getButtonValue('+')}>+</button>
+                <button onClick={ () => getButtonValue('-')}>-</button>
             </div>
             <div className={'buttons_wrapper'}>
                 <button onClick={ () => getButtonValue(1)}>1</button>
