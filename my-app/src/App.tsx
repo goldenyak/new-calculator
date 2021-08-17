@@ -17,7 +17,6 @@ function App() {
         // let sum = calc.substring(0, calc.length - 1)
         let sum = calc.slice(0, -1)
         setCalc(sum)
-        console.log(sum)
 
         // let sum = calc.split('')
         // sum.map(Number)
