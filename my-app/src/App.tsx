@@ -13,14 +13,15 @@ function App() {
         calc === '0' ? calc = '' : setCalc(calc + value)
     }
 
-    function getSum(value: any) {
-        // let sum = calc.substring(0, calc.length - 1)
-        let sum = calc.slice(0, -1)
+    function deleteNumber(value: any) {
+        let sum = calc.substring(0, calc.length - 1)
+        // let sum = calc.slice(0, -1)
         setCalc(sum)
+    }
 
-        // let sum = calc.split('')
-        // sum.map(Number)
-        // console.log(sum)
+    function getSum(value: any) {
+        let sum = eval(calc)
+        console.log(sum)
     }
 
     return (
