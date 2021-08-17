@@ -47,3 +47,18 @@
 button:hover {
     opacity: 0.7;
 }
+
+.delete_wrapper {
+    display: flex;
+ justify-content: space-around;
+
+}
+
+.delete_wrapper button {
+    width: 42%;
+    font-size: 25px;
+    line-height: 40px;
+    border-radius: 5px;
+    margin: 2px;
+    background-color: crimson;
+}

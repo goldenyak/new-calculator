@@ -21,12 +21,23 @@ function App() {
 
     function getSum(value: any) {
         let sum = eval(calc)
-        console.log(sum)
+        setCalc(sum)
+    }
+
+    function clearedValue() {
+        setCalc('')
+        setTimeout( () => {
+            setCalc('')
+        }, 100 )
     }
 
     return (
         <div className={'main_wrapper'}>
             <input value={calc} className={'input'}></input>
+            <div className={'delete_wrapper'}>
+                <button onClick={() => deleteNumber('DELETE')}>DELETE</button>
+                <button onClick={() => clearedValue()}>AC</button>
+            </div>
             <div className={'operations_wrapper'}>
                 <button onClick={() => getButtonValue('/')}>/</button>
                 <button onClick={() => getButtonValue('*')}>*</button>
@@ -46,6 +57,7 @@ function App() {
                 <button onClick={() => getButtonValue(0)}>0</button>
                 <button onClick={() => getButtonValue('.')}>.</button>
                 <button onClick={() => getSum('=')}>=</button>
+
             </div>
         </div>
     )
